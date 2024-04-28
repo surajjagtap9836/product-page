@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <style>
+        
+        .img-4{
+            height: 90px;
+            width: 60px;
+            object-fit: contain;
+            border: 2px solid black;
+            margin: 10px 20px;
+
+        }
+        .img-4:hover{
+            height: 110px;
+            width: 100px;
+            border-radius: 10px;
+            transition: 1s;
+            box-shadow: 2px 2px 5px 2px black;
+            
+
+        }
+      .main{
+        height: 300px;
+        width: 400px;
+        object-fit: contain;
+        display: block;
+        margin: 0px auto;
+
+
+
+      }
+      .img4{
+    display: flex;
+    justify-content: center;
+    
+      }
+      .overall{
+        border: 2px solid black;
+        height: 550px;
+        width: 550px;
+        display: block;
+        margin:  80px auto;
+        border-radius: 10px ;
+        background-color:white;
+      
+      }
+      body{
+        background-color: #A9C9FF;
+        background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+        
+        
+    
+
+
+      }
+    </style>
+</head> 
+<body >
+    <div class="overall">
+
+    <div class="hii">
+
+        <h1 style="text-align: center" id="product-title">Samsung S23 ultra pro </h1>
+        <img src="smain.jpg" class="main" id="main-imges">
+    </div>
+       
+
+    <div class="img4">
+      <img src="s1.jpg" class="img-4" onclick="changeimg(1)">
+      <img src="s2.jpg" class="img-4" onclick="changeimg(2)">
+      <img src="s3.jpg" class="img-4" onclick="changeimg(3)">
+      <img src="s4.jpg" class="img-4" onclick="changeimg(4)">
+      <img src="s5.jpg" class="img-4" onclick="changeimg(5)">
+    
+    </div>
+</div>
+<script>
+    function changeimg(mobileimg){
+         const pratik= document.getElementById("main-imges")
+         const ashok= document.getElementById("product-title")
+     if(mobileimg==1)
+       {
+        ashok.innerText= "Samsung S27  pro";
+        pratik.src="s1.jpg";
+       }
+       else if(mobileimg==2)
+       {
+        ashok.innerText= "Samsung galaxy M11 ";
+        pratik.src="s2.jpg";
+       }
+       else if(mobileimg==3)
+       {
+        ashok.innerText= "Samsung pro";
+        pratik.src="s3.jpg";
+       }
+       else if(mobileimg==4)
+       {
+        ashok.innerText= "lenovo S27  pro";
+        pratik.src="s4.jpg";
+       }
+       else if(mobileimg==5)
+       {
+        ashok.innerText= "vivo Y56 ";
+        pratik.src="s5.jpg";
+       }
+       
+
+
+    }
+</script>
+
+</body>
+</html>
